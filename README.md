@@ -19,7 +19,7 @@ NOTE THAT client/cypress.json should point to dockerized client through dockeriz
 check if db tables exists:
 
 ~/taxi-app$ sudo docker-compose -f docker-compose.local.yml exec taxi-database psql -U taxi
-START PROJECT FOR DEVELOPMENT( with dockerized postgres and dockerized redis ):
+# START PROJECT FOR DEVELOPMENT( with dockerized postgres and dockerized redis ):
 NOTE THAT client/cypress.json should point to NOT dockerized client: "baseUrl": "http://localhost:3000" NOTE THAT taxi-server in docker-compose.local.yml should point to test.env file for testing with cypress
 
 ~$ git clone https://github.com/Artyom-Martuchenko/taxi-app.git
