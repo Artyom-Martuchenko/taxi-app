@@ -22,7 +22,7 @@ check if db tables exists:
 START PROJECT FOR DEVELOPMENT( with dockerized postgres and dockerized redis ):
 NOTE THAT client/cypress.json should point to NOT dockerized client: "baseUrl": "http://localhost:3000" NOTE THAT taxi-server in docker-compose.local.yml should point to test.env file for testing with cypress
 
-~$ git clone https://github.com/Artyom-Maruchenko/taxi-app.git
+~$ git clone https://github.com/Artyom-Martuchenko/taxi-app.git
 
 ~$ cd taxi-app
 
