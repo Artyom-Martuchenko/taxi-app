@@ -2,7 +2,7 @@
 # START PROJECT FOR TESTING(FULLY DOCKERIZED):
 NOTE THAT client/cypress.json should point to dockerized client through dockerized nginx: "baseUrl": "http://localhost:8080" NOTE THAT taxi-server in docker-compose.local.yml should point to test.env file for testing with cypress
 
-~$ git clone https://github.com/jonndoe/taxi-app.git
+~$ git clone https://github.com/Artyom-Martuchenko/taxi-app.git
 
 ~$ cd taxi-app
 
