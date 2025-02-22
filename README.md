@@ -1,5 +1,7 @@
-# taxi-app
+# Taxi-app
+
 # START PROJECT FOR TESTING(FULLY DOCKERIZED):
+
 NOTE THAT client/cypress.json should point to dockerized client through dockerized nginx: "baseUrl": "http://localhost:8080" NOTE THAT taxi-server in docker-compose.local.yml should point to test.env file for testing with cypress
 
 ~$ git clone https://github.com/Artyom-Martuchenko/taxi-app.git
@@ -19,7 +21,9 @@ NOTE THAT client/cypress.json should point to dockerized client through dockeriz
 check if db tables exists:
 
 ~/taxi-app$ sudo docker-compose -f docker-compose.local.yml exec taxi-database psql -U taxi
+
 # START PROJECT FOR DEVELOPMENT( with dockerized postgres and dockerized redis ):
+
 NOTE THAT client/cypress.json should point to NOT dockerized client: "baseUrl": "http://localhost:3000" NOTE THAT taxi-server in docker-compose.local.yml should point to test.env file for testing with cypress
 
 ~$ git clone https://github.com/Artyom-Martuchenko/taxi-app.git
@@ -37,6 +41,7 @@ NOTE THAT client/cypress.json should point to NOT dockerized client: "baseUrl": 
 ~/taxi-app/client$ npx cypress open
 
 # SOME NOTES:
+
 To reset the database, start by running the following command in your terminal, while your Docker containers are running:
 $ docker-compose exec taxi-database psql -U taxi -d test
 Then run the following command to delete the users and their related data:
@@ -47,7 +52,7 @@ TRUNCATE trips_user CASCADE;
 RUNNING THE POSTGRES DATABASE LOCALLY ON DOCKER (EXAMPLE 1)
 Install docker image postgres:11
 
-Start a docker container with that postgres image. $ sudo docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=somebase -e POSTGRES_USER=docker -p 5432:5432 -v $home/docker/volumes/postgres:/var/lib/postgresql/data  postgres:11
+Start a docker container with that postgres image. $ sudo docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=somebase -e POSTGRES_USER=docker -p 5432:5432 -v $home/docker/volumes/postgres:/var/lib/postgresql/data postgres:11
 
 Create a databe with name 'everycheese' in potgresql $ createdb -h localhost --username=docker everycheese
 
