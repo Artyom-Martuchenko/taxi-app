@@ -1,4 +1,4 @@
-# Taxi-app
+# taxi-app
 
 # START PROJECT FOR TESTING(FULLY DOCKERIZED):
 
