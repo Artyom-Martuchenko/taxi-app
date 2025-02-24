@@ -67,6 +67,6 @@ Run docker-compose to up postgres and redis:
 
 $ sudo docker-compose -f docker-compose.postgres.redis.yml up --build
 
-Connect to postgresql container to check if it works:
+Connect to PostgreSQL container to check if it works:
 
 $ psql -h localhost -p 5432 -d docker -U docker --password
