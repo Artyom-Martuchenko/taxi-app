@@ -63,7 +63,6 @@ $ pip install -r requirements.txt
 $ python manage.py migrate
 
 RUNNING THE POSTGRES DATABASE LOCALLY ON DOCKER (EXAMPLE 2)
-SEE FOR REFFERENCE: https://docs.docker.com/engine/examples/postgresql_service/
 Run docker-compose to up postgres and redis:
 
 $ sudo docker-compose -f docker-compose.postgres.redis.yml up --build
